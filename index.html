@@ -1,63 +1,61 @@
+ 
 <!DOCTYPE html>
-<html>
+<html >
     <head>
         <meta charset="utf-8">
         <title>Project: Stefanos Tilsizoglou</title>
         <style>
             body {
-                background-color: rgb(182, 232, 245);
+                background-color: antiquewhite;
             }
             #main-body4 {
-                background-color: rgb(31, 235, 12);
-                border: 10px groove rgb(250, 140, 237);
-                position: relative;
+                background-color: darkslategrey;
                 color: rgb(235, 12, 31);
                 padding: 8px;
+                border: 10px groove;
             }
             #personal {
-                background-color: rgb(17, 17, 18);
-                border: 10px groove rgb(9, 112, 24);
-                position: relative;
+                background-color: darkslategrey;
                 color: rgb(232, 228, 240);
                 padding: 8px;
+                border: 10px groove;
             }
             #main-body3{
-                background-color: rgb(31, 23, 46);
-                border: 10px groove rgb(219, 48, 91);
-                position: relative;
+                background-color: silver;
                 color: rgb(229, 225, 237);
                 padding: 8px;
+                border: 10px groove;
             }
             #main-body2 {
-                background-color: rgb(227, 189, 214);
-                border: 10px groove rgb(52, 60, 82);
-                position: relative;
+                background-color: darkslategrey;
                 padding: 8px;
+                border: 10px groove;
             }
             #main-body {
-                background-color: rgb(204, 209, 71);
-                border: 10px groove rgb(89, 158, 25);
+                background-color: silver;
+                border: 10px groove;
                 margin: auto;
-                position: relative;
                 padding: 8px;
+                border: 10px groove;
             }
-            #fixed-youare {
-                position: relative;
-                margin: 220px;
-                z-index: 1;
-            }
+            
             #image {
-                position: absolute;
-                top: 80px;
+                position: relative;
                 float: left;
+                width: 200px;
+                height: 200px;
+                margin-right: 45px;
+            }
+            .contents {
+                position: relative;
+                margin-left: 250px;
             }
         </style>
     </head>
     <body>
         
-        <div id="fixed-youare"><h1>Stefanos Tilsizoglou</h1></div>
-        <img id="image" src="data:image/jpeg;base64,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" alt="Picture: Stefanos Tilsizoglou">
-        <h2>Contents</h2>
+        <h1><img id="image" src="https://pbs.twimg.com/profile_images/1206197270888304647/SQvis7hy_400x400.jpg" alt="Picture: Stefanos Tilsizoglou">Stefanos Tilsizoglou</h1>
+        <div class="contents"><h2>Contents</h2>
         <ul>
             <li><a href="#Content1">Personal Information
 </a></li>
@@ -65,7 +63,7 @@
             <li><a href="#Content3">Certifications</a></li>
             <li><a href="#Content4">Education</a></li>
             <li><a href="#Content5">Hobbies and Free Time</a></li>
-        </ul>
+        </ul></div>
         <div id="personal">
         <h2 id="Content1">Personal Information</h2>
         <ol>
@@ -198,3 +196,4 @@ Recommendation Letter</td>
         </div>
         </body>
 </html>
+
